@@ -5,3 +5,13 @@ spring:
      cache: false
      prefix: classpath:/templates/
      suffix: .html
+  datasource:
+     url: jdbc:mysql://localhost:3307/springboot
+     username: root
+     password: mayun123
+     driverClassName: com.mysql.jdbc.Driver
+     max-active: 20
+     max-idle: 8
+     min-idle: 8
+     initial-size: 10
+
