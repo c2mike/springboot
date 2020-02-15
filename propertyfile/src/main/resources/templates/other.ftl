@@ -8,9 +8,9 @@
 ${name}
 <#if address=="china">
     上海
-    <#elseif sex=="boy">
-        北京
-    <#else>
+<#elseif sex=="boy">
+    北京
+<#else>
 </#if>
 <#list listResult as res>
     ${res}

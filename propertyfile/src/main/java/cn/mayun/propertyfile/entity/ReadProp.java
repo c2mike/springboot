@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
-@PropertySource(value={"classpath:application.yml"})
+@PropertySource(value = {"classpath:application.yml"})
 @Component
 @ConfigurationProperties(prefix = "env")
 

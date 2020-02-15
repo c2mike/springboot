@@ -19,23 +19,22 @@ public class YmlTest {
 
     @Value("${name}")
     private String address;
+
     @RequestMapping("/ymltest")
     public @ResponseBody
-    String ymlTest()
-    {
-        return readProp.toString()+address;
+    String ymlTest() {
+        return readProp.toString() + address;
     }
 
     @RequestMapping("/freemark")
-    public String freemark(Map<String,Object> map)
-    {
-        map.put("name",address);
-        map.put("address","china");
-        map.put("sex","boy");
+    public String freemark(Map<String, Object> map) {
+        map.put("name", address);
+        map.put("address", "china");
+        map.put("sex", "boy");
         List<String> list = new ArrayList<String>();
         list.add("1");
         list.add("2");
-        map.put("listResult",list);
+        map.put("listResult", list);
         return "other";
     }
 }
